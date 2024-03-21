@@ -1,0 +1,44 @@
+:root {
+  --toggler-size: 40px;
+}
+
+.simpleToggler {
+  width: var(--toggler-size);
+  height: var(--toggler-size);
+  border-radius: 100px;
+  background-color: rgba(var(--accent), 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  transition: backgroundColor 0.2s ease;
+
+  &:hover {
+    background-color: rgba(#aaa, 0.4);
+  }
+
+  .iconTheme {
+    width: 24px;
+    height: 24px;
+    animation: frameIn 0.4s ease-in-out;
+  }
+
+  @keyframes frameIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+html[data-theme="light"] .simpleToggler {
+  transform: translateX(0);
+}
+
+html[data-theme="dark"] .ball {
+  transform: translateX(20px);
+}

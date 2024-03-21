@@ -1,0 +1,145 @@
+.card {
+  position: relative;
+  width: 400px;
+  height: 460px;
+  background-color: rgba(var(--accent), 1);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 1px 1px 2px rgba(var(--box-shadow), 0.6);
+
+  &:hover > .edit-block {
+    display: inline;
+  }
+
+  &:hover > .favorites {
+    display: inline;
+  }
+
+  span,
+  p {
+    color: rgba(var(--text), 1);
+  }
+
+  * {
+    font-style: normal;
+  }
+
+  .photo {
+    width: 360px;
+    height: 200px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 8px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .price * {
+      font-weight: 600;
+    }
+
+    .status {
+      width: 100px;
+      height: 30px;
+      background-color: #ffdb94;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  }
+
+  .info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .view-estate {
+    width: 120px;
+    padding: 8px 25px;
+    background-color: var(--bgc);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color ease 0.3s;
+
+    &:active {
+      background-color: #7d00b7;
+    }
+
+    &:hover {
+      background-color: #b006ff;
+    }
+  }
+
+  .edit-block {
+    width: 80px;
+    height: 40px;
+    padding: 8px 11px;
+    position: absolute;
+    inset: 0;
+    top: 25px;
+    left: 290px;
+    display: none;
+    background-color: rgba(var(--accent), 1);
+    border-radius: 8px;
+
+    .edit {
+      margin-right: 10px;
+
+      & > svg {
+        width: 24px;
+        height: 24px;
+        color: rgba(var(--text), 1);
+      }
+
+      &:hover > svg {
+        color: #1e6dff;
+      }
+    }
+
+    .trash {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+
+      & {
+        color: rgba(var(--text), 1);
+      }
+
+      &:hover {
+        color: #ff1616;
+      }
+    }
+  }
+
+  .favorites {
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    position: absolute;
+    inset: 0;
+    top: 25px;
+    left: 330px;
+    display: none;
+    background-color: rgba(var(--accent), 1);
+    border-radius: 8px;
+    color: rgb(255, 0, 55);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-4px);
+      color: rgb(255, 0, 55) !important;
+    }
+  }
+}

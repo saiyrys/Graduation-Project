@@ -1,0 +1,21 @@
+.wrap {
+  margin: 80px auto;
+  width: 600px;
+  height: 750px;
+  background-color: rgba(var(--accent), 1);
+  border-radius: 20px;
+  padding: 50px 50px;
+
+  h2,
+  p,
+  svg {
+    color: rgba(var(--text), 1);
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,37 @@
+:root {
+  --background-primery-light: #f1f4ff;
+  --accent-light: 255, 255, 255;
+  --text-light: 00, 00, 00;
+  --background-secondary-light: #002b5310;
+  --box-shadow-light: 00, 00, 00;
+  --background-input-light: #fff;
+  --hover-light: #eee;
+
+  --background-primery-dark: #323232;
+  --accent-dark: 44, 44, 44;
+  --text-dark: 255, 255, 255;
+  --background-secondary-dark: #1e1e1e;
+  --box-shadow-dark: 100, 100, 100;
+  --background-input-dark: #555;
+  --hover-dark: #3c3c3c;
+}
+
+[data-theme="light"] {
+  --background-primery: var(--background-primery-light);
+  --accent: var(--accent-light);
+  --text: var(--text-light);
+  --background-secondary: var(--background-secondary-light);
+  --box-shadow: var(--box-shadow-light);
+  --background-input: var(--background-input-light);
+  --hover: var(--hover-light);
+}
+
+[data-theme="dark"] {
+  --background-primery: var(--background-primery-dark);
+  --accent: var(--accent-dark);
+  --text: var(--text-dark);
+  --background-secondary: var(--background-secondary-dark);
+  --box-shadow: var(--box-shadow-dark);
+  --background-input: var(--background-input-dark);
+  --hover: var(--hover-dark);
+}

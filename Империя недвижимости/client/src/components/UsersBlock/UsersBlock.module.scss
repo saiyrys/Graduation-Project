@@ -1,0 +1,12 @@
+.users-block {
+  width: 1000px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.25);
+
+  @media (min-width: 1920px) {
+    width: 1500px;
+    height: 750px;
+  }
+}
